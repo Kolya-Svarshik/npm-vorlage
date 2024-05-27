@@ -1,12 +1,10 @@
 # npm-vorlage
 
-
 <!-- Add copy year -->
 
     <script>
       document.querySelector('.js-data').textContent = new Date().getFullYear();
     </script>
-
 
 <!-- Current month and year -->
 
@@ -25,4 +23,13 @@
 
         yearNumbers.textContent = year
         monthNumbers.textContent = currentMonth
+    </script>
+
+<!-- Scroll -->
+
+    <script>
+        function scrollToForm() {
+            var formElement = document.getElementById('testtest');
+            formElement.scrollIntoView({ behavior: 'smooth' });
+        }
     </script>
