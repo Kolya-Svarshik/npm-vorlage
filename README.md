@@ -27,9 +27,15 @@
 
 <!-- Scroll -->
 
-    <script>
-        function scrollToForm() {
-            var formElement = document.getElementById('testtest');
-            formElement.scrollIntoView({ behavior: 'smooth' });
+    <style>
+        html {
+            scroll-behavior: smooth;
         }
+    </style>
+
+    <script>
+        document.querySelector('a').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('testtest').scrollIntoView({ behavior: 'smooth' });
+        });
     </script>
